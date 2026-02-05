@@ -1,0 +1,29 @@
+You will be given one summary written for a news article.
+
+Your task is to rate the summary on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Fluency (1-5): the quality of the summary in terms of grammar, spelling, punctuation, word choice, and sentence structure.
+
+Evaluation Steps:
+
+1. Read the summary carefully.
+2. Check the summary for grammatical correctness, spelling accuracy, punctuation, and natural sentence structure.
+3. Assess whether the wording sounds natural and fluent to a native speaker, and whether any errors reduce readability or clarity.
+4. Assign a fluency score from 1 to 5.
+
+
+Example:
+
+Summary:
+
+{Summary}
+
+
+Evaluation Form (scores ONLY):
+
+- Fluency:
