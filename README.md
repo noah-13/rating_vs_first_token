@@ -19,19 +19,6 @@ Using `uv` (recommended):
 uv sync
 ```
 
-Or with `pip`:
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-pip install -r <(python - <<'PY'
-import tomllib, sys
-from pathlib import Path
-py = tomllib.loads(Path('pyproject.toml').read_text())
-print('\n'.join(py['project']['dependencies']))
-PY
-)
-```
-
 ## Reproduce All Experiments
 ```bash
 ./run_all.sh
