@@ -56,7 +56,8 @@ All outputs are written to `results/`:
 
 ## Data
 - `data/summeval.json`: input dataset used by the judge.
-- `data/prompts/*.txt`: prompt templates for each dimension.
+- `data/prompts/*_detailed.txt`: prompt templates per dimension.
+  - `coh_detailed.txt`, `con_detailed.txt`, `flu_detailed.txt`, `rel_detailed.txt` are mapped in `run_all.sh`.
 
 ## Notes
 - The script overwrites files in `results/`.

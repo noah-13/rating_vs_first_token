@@ -14,8 +14,17 @@ mkdir -p results
 
 run_dim() {
   local dim="$1"
+  local prompt_file=""
+  case "$dim" in
+    coherence) prompt_file="data/prompts/coh_detailed.txt" ;;
+    consistency) prompt_file="data/prompts/con_detailed.txt" ;;
+    fluency) prompt_file="data/prompts/flu_detailed.txt" ;;
+    relevance) prompt_file="data/prompts/rel_detailed.txt" ;;
+    *) echo "Unknown dim: $dim" >&2; exit 1 ;;
+  esac
   local args=(
     --dim "$dim"
+    --prompt_file "$prompt_file"
     --model "$MODEL"
     --batch_size "$BATCH_SIZE"
     --max_new_tokens "$MAX_NEW_TOKENS"
